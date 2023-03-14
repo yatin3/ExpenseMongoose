@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense</title>
+</head>
+<body>
+    
+    <form onsubmit="Expense(event)">
+        <label for="amount">amount:</label>
+        <input id="amount" type="text"><br>
+        <label for="description">description:</label>
+        <input type="text" id="description"><br>
+        <label for="category">category:</label>
+        
+        <select id="category">
+        <option value="food">Food</option>
+        <option value="petrol">Petrol</option>
+        <option value="salary">Salary</option>
+        </select>
+
+        <input type="submit" value="Add Expense">
+        <p id="message"></p>
+
+        <ul id="List">
+
+        </ul>
+
+        <ul id="leaderboard">
+
+        </ul>
+    </form>
+
+    <button id="rzp-button1">Buy Premium</button>
+
+          <div id="pagination">
+
+          </div>
+
+          <!-- <p>Expenses Per Page</p>
+          <form onsubmit="Helper(event)">
+          <input type="text" name="row" id="row">
+          <input type="submit" value="page">
+          </form>
+
+          <ul id="downloads">
+
+          </ul> -->
+
+          <button id="logout">LogOut</button>
+
+    <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.0/axios.min.js"></script>
+    
+  <script src="frontend.js"></script>
+</body>
+</html>
